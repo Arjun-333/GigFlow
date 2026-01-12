@@ -61,3 +61,14 @@ See `.env` in `server/` for configuration. Default:
 
 - `MONGO_URI=mongodb://127.0.0.1:27017/gigflow`
 - `PORT=5000`
+
+## Project Philosophy
+
+GigFlow aims to strip away the complexity of modern freelancing platforms. No hidden fees, no complex algorithms—just a direct connection between talent and opportunity. We believe in atomic exactness for hiring, ensuring that once a bid is accepted, the deal is sealed instantly.
+
+## Future Roadmap
+
+- [ ] Real-time Chat Messaging
+- [ ] Payment Gateway Integration (Stripe/PayPal)
+- [ ] User Reviews and Rating System
+- [ ] File Attachments for Gigs and Bids
