@@ -1,7 +1,13 @@
 import { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
+
 axios.defaults.withCredentials = true;
+// Set the base URL for axios requests
+// In production (Vercel), this will be the Render backend URL
+// In development, it falls back to localhost:5000 if not set
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 
 const AuthContext = createContext();
 

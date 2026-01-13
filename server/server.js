@@ -21,7 +21,10 @@ app.use(cookieParser());
 app.use(helmet());
 app.use(morgan('dev'));
 app.use(cors({
-  origin: process.env.CLIENT_URL || "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+    process.env.CLIENT_URL, // Vercel frontend URL
+  ].filter(Boolean), // Remove undefined/null if env var is missing
   credentials: true
 }));
 
